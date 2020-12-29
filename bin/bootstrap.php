@@ -18,8 +18,8 @@ use ZnLib\Console\Symfony4\Helpers\CommandHelper;
 
 // --- Generator ---
 
-//$container->bind(\ZnTool\Dev\Generator\Domain\Interfaces\Services\DomainServiceInterface::class, \ZnTool\Dev\Generator\Domain\Services\DomainService::class);
-//$container->bind(\ZnTool\Dev\Generator\Domain\Interfaces\Services\ModuleServiceInterface::class, \ZnTool\Dev\Generator\Domain\Services\ModuleService::class);
+//$container->bind(\ZnTool\Generator\Domain\Interfaces\Services\DomainServiceInterface::class, \ZnTool\Generator\Domain\Services\DomainService::class);
+//$container->bind(\ZnTool\Generator\Domain\Interfaces\Services\ModuleServiceInterface::class, \ZnTool\Generator\Domain\Services\ModuleService::class);
 
 CommandHelper::registerFromNamespaceList([
     'ZnTool\Phar\Commands',
