@@ -23,7 +23,7 @@ class UploadVendorCommand extends Command
         $pharGzFile = $pharFile . '.gz';
 
         if (file_exists($pharGzFile)) {
-            $question = new ConfirmationQuestion('Update phar? (y|n) [n]: ', false);
+            $question = new ConfirmationQuestion('Update phar? (y|N): ', false);
             $helper = $this->getHelper('question');
             $isUpdate = $helper->ask($input, $output, $question);
             if ( ! $isUpdate) {
