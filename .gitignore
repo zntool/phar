@@ -1,0 +1,37 @@
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+/.env.*
+#.env
+
+# windows thumbnail cache
+Thumbs.db
+
+# PHP Storm IDE
+/.idea/*
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# vagrant runtime
+/.vagrant
+
+.dbeaver-data-sources.xml
+session/
