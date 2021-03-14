@@ -23,7 +23,7 @@ class PackVendorCommand extends Command
         $excludes = $config['excludes'] ?? $this->excludes();
         $logWidget->start('Pack files');
         $packager = new Packager;
-        $packager->exportVendor($config['sourceDir'], $config['outputFile'], $excludes);
+        $packager->pack($config['sourceDir'], $config['outputFile'], $excludes);
         $logWidget->finishSuccess();
         return 0;
     }
