@@ -54,7 +54,7 @@ class PackApplicationCommand extends Command
             //'/symfony/service-contracts/',
             '/zntool/dev/',
             '/zntool/test/',
-            '/zndoc/rest-api/',
+            '/zndoc/',
             //'/symfony/web-server-bundle',
             '/phpunit/',
             //'/codeception/',
