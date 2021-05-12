@@ -1,22 +1,15 @@
 #!/usr/bin/env php
 <?php
 
-use Symfony\Component\Console\Application;
-use ZnCore\Base\Libs\DotEnv\DotEnv;
-use Illuminate\Container\Container;
-use ZnLib\Db\Factories\ManagerFactory;
-use ZnLib\Db\Capsule\Manager;
+use ZnCore\Base\Libs\App\Factories\ApplicationFactory;
+use ZnCore\Base\Libs\App\Factories\KernelFactory;
 
 require __DIR__ . '/../../../autoload.php';
-DotEnv::init();
 
-$container = Container::getInstance();
-$container->bind(Application::class, Application::class, true);
-/*$container->bind(Manager::class, function () {
-    return ManagerFactory::createManagerFromEnv();
-}, true);*/
-$application = $container->get(Application::class);
-
-require __DIR__ . '/bootstrap.php';
-
+$bundles = [
+    new \ZnCore\Base\Libs\App\Bundle(['all']),
+    new \ZnTool\Phar\Bundle(['container', 'console']),
+];
+$kernel = KernelFactory::createConsoleKernel($bundles);
+$application = ApplicationFactory::createConsole($kernel);
 $application->run();
