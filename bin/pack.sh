@@ -1,2 +1,3 @@
 #!/bin/sh
-php console phar:pack
+cd ../../../bin
+php zn phar:pack
