@@ -6,6 +6,7 @@ use Phar;
 use ZnCore\Base\Helpers\ComposerHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use ArrayIterator;
+use ZnCore\Base\Libs\FileSystem\Helpers\FileStorageHelper;
 
 class Packager
 {
@@ -20,8 +21,8 @@ class Packager
         $outPath = rtrim(rtrim($outPath, DIRECTORY_SEPARATOR), '/');
         $outPath = str_replace(DIRECTORY_SEPARATOR, '/', $outPath);
 
-        FileHelper::remove($outPath);
-        FileHelper::remove($outPath . '.gz');
+        FileStorageHelper::remove($outPath);
+        FileStorageHelper::remove($outPath . '.gz');
 
         $phar = new Phar($outPath, \FilesystemIterator::CURRENT_AS_FILEINFO, basename($outPath));
         $phar->startBuffering();
