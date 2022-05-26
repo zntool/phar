@@ -19,6 +19,7 @@ class PackVendorCommand extends Command
     {
         $output->writeln('<fg=white># Pack vendor to phar</>');
         $logWidget = new LogWidget($output);
+        $logWidget->setPretty(true);
         $config = PharHelper::loadConfig('vendor');
         $excludes = $config['excludes'] ?? $this->excludes();
         $logWidget->start('Pack files');

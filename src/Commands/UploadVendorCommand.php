@@ -20,6 +20,7 @@ class UploadVendorCommand extends Command
     private function ensurePhar(string $pharFile, InputInterface $input, OutputInterface $output)
     {
         $logWidget = new LogWidget($output);
+        $logWidget->setPretty(true);
         $pharGzFile = $pharFile . '.gz';
 
         if (file_exists($pharGzFile)) {
@@ -51,6 +52,7 @@ class UploadVendorCommand extends Command
         $this->ensurePhar($pharFile, $input, $output);
 
         $logWidget = new LogWidget($output);
+        $logWidget->setPretty(true);
 
         $logWidget->start('Connect');
         $conn_id = ftp_connect($_ENV['VENDOR_FTP_SERVER']);

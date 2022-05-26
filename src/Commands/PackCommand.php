@@ -19,6 +19,7 @@ class PackCommand extends Command
     {
         $output->writeln('<fg=white># Pack application to phar</>');
         $logWidget = new LogWidget($output);
+        $logWidget->setPretty(true);
         $config = PharHelper::loadAllConfig();
         $profiles = array_keys($config['profiles']);
 

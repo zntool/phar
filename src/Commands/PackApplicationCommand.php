@@ -19,6 +19,7 @@ class PackApplicationCommand extends Command
     {
         $output->writeln('<fg=white># Pack application to phar</>');
         $logWidget = new LogWidget($output);
+        $logWidget->setPretty(true);
         $config = PharHelper::loadConfig('app');
         $excludes = $config['excludes'] ?? $this->excludes();
         $logWidget->start('Pack files');
