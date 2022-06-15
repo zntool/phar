@@ -3,6 +3,7 @@
 namespace ZnTool\Phar\Commands;
 
 use Illuminate\Container\Container;
+use ZnCore\Base\Libs\Container\Helpers\ContainerHelper;
 use ZnLib\Console\Symfony4\Widgets\LogWidget;
 use ZnLib\Console\Symfony4\Widgets\TextWidget;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
@@ -31,7 +32,7 @@ class UploadVendorCommand extends Command
                 return;
             }
         }
-        $packVendorCommand = Container::getInstance()->get(PackVendorCommand::class);
+        $packVendorCommand = ContainerHelper::getContainer()->get(PackVendorCommand::class);
         $packVendorCommand->execute($input, $output);
         $logWidget->start('Compress');
         $content = file_get_contents($pharFile);
