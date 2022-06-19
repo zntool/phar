@@ -3,7 +3,7 @@
 namespace ZnTool\Phar\Domain\Libs;
 
 use Phar;
-use ZnCore\Base\Helpers\ComposerHelper;
+use ZnCore\Base\Libs\Composer\Helpers\ComposerHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use ArrayIterator;
 use ZnCore\Base\Libs\FileSystem\Helpers\FileStorageHelper;
