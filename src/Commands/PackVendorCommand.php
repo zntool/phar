@@ -2,13 +2,12 @@
 
 namespace ZnTool\Phar\Commands;
 
-use ZnLib\Console\Symfony4\Widgets\LogWidget;
-use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
-use ZnTool\Phar\Domain\Helpers\PharHelper;
-use ZnTool\Phar\Domain\Libs\Packager;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use ZnLib\Console\Symfony4\Widgets\LogWidget;
+use ZnTool\Phar\Domain\Helpers\PharHelper;
+use ZnTool\Phar\Domain\Libs\Packager;
 
 class PackVendorCommand extends Command
 {

@@ -2,10 +2,8 @@
 
 namespace ZnTool\Phar\Domain\Libs;
 
-use Phar;
-use ZnCore\Base\Libs\Composer\Helpers\ComposerHelper;
-use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use ArrayIterator;
+use Phar;
 use ZnCore\Base\Libs\FileSystem\Helpers\FileStorageHelper;
 
 class Packager
