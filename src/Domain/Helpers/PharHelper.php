@@ -2,8 +2,8 @@
 
 namespace ZnTool\Phar\Domain\Helpers;
 
-use ZnCore\Base\Libs\FileSystem\Helpers\FilePathHelper;
-use ZnCore\Base\Libs\Store\StoreFile;
+use ZnCore\Base\FileSystem\Helpers\FilePathHelper;
+use ZnCore\Base\Store\StoreFile;
 
 class PharHelper
 {

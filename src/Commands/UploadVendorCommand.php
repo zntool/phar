@@ -3,10 +3,10 @@
 namespace ZnTool\Phar\Commands;
 
 use Illuminate\Container\Container;
-use ZnCore\Base\Libs\Container\Helpers\ContainerHelper;
+use ZnCore\Base\Container\Helpers\ContainerHelper;
 use ZnLib\Console\Symfony4\Widgets\LogWidget;
 use ZnLib\Console\Symfony4\Widgets\TextWidget;
-use ZnCore\Base\Libs\Arr\Helpers\ArrayHelper;
+use ZnCore\Base\Arr\Helpers\ArrayHelper;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
