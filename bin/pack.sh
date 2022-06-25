@@ -1,3 +1,3 @@
 #!/bin/sh
-cd ../../../zncore/base/bin
+cd ../../../znlib/console/bin
 php zn phar:pack
