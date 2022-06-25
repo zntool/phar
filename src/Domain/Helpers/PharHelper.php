@@ -3,7 +3,7 @@
 namespace ZnTool\Phar\Domain\Helpers;
 
 use ZnCore\Base\FileSystem\Helpers\FilePathHelper;
-use ZnCore\Base\Store\StoreFile;
+use ZnLib\Components\Store\StoreFile;
 
 class PharHelper
 {
