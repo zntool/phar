@@ -2,7 +2,7 @@
 
 namespace ZnTool\Phar\Commands;
 
-use Illuminate\Container\Container;
+use ZnCore\Base\Container\Libs\Container;
 use ZnCore\Base\Container\Helpers\ContainerHelper;
 use ZnLib\Console\Symfony4\Widgets\LogWidget;
 use ZnLib\Console\Symfony4\Widgets\TextWidget;
