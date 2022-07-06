@@ -4,7 +4,7 @@ namespace ZnTool\Phar\Domain\Libs;
 
 use ArrayIterator;
 use Phar;
-use ZnCore\Base\FileSystem\Helpers\FileStorageHelper;
+use ZnCore\FileSystem\Helpers\FileStorageHelper;
 
 class Packager
 {
